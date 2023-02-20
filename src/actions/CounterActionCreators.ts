@@ -5,7 +5,7 @@ export function incrementCounter(counter?: ICounter) {
     type: actionTypes.INCREMENT_COUNTER,
     counter,
   }
-  return (dispatch: DispatchType) =>  dispatch(action);
+  return action;
 }
 
 export function decrementCounter(counter?: ICounter) {
