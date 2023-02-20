@@ -1,4 +1,5 @@
-import * as actionTypes from "../actions/actionTypes"
+import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../redux/store";
 
 const initialState: CounterState =
 {
@@ -8,40 +9,22 @@ const initialState: CounterState =
     }
 };
 
-export const counterReducer = (
-    state: CounterState = initialState,
-    action: CounterAction
-): CounterState => {
-    switch (action.type) {
-        
-        case actionTypes.INCREMENT_COUNTER:
-            const newIncrementCounter: ICounter = {
-                count: state.counter.count + 1
+export const counterSlice = createSlice(
+    {
+        name: 'counter',
+        initialState,
+        reducers:
+        {
+            increment: (state) => {
+                state.counter.count += 1;
+            },
+            decrement: (state) => {
+                state.counter.count -= 1;
             }
-            return {
-                ...state,
-                counter: newIncrementCounter,
-            }
-
-        case actionTypes.DECREMENT_COUNTER:
-            const newDecrementCounter: ICounter = {
-                count: state.counter.count - 1
-            }
-            return {
-                ...state,
-                counter: newDecrementCounter,
-            }
-
+        }
     }
-    return state
-};
+);
 
-
-// export const counterReducer : Reducer<CounterState, AnyAction> = (state : CounterState = initialState, action : AnyAction) => 
-// {
-//     switch(action.type)
-//     {
-//         default:
-//             return state;
-//     }
-// }
+export const {increment, decrement} = counterSlice.actions;
+export const selectCount = (state: RootState) => state.counter.count;
+export default counterSlice.reducer;

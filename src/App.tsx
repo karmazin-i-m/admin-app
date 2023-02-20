@@ -1,32 +1,18 @@
-import { Dispatch } from '@reduxjs/toolkit';
-import React from 'react';
-import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-import { incrementCounter, decrementCounter} from './actions/CounterActionCreators'
+import { useAppSelector } from './hooks/selectorHook';
+import { useAppDispatch } from './hooks/dispatchHook';
+import { decrement, increment, selectCount } from './reducers/counterReducer';
 
-const App: React.FC = () => {
 
-  const counter: ICounter = useSelector(
-    (state: CounterState) => state.counter,
-    shallowEqual
-  )
+const App = () => {
 
-  const dispatch: Dispatch<any> = useDispatch()
-
-  const increment = React.useCallback(
-    (counter: ICounter) => dispatch(incrementCounter()),
-    [dispatch]
-  );
-
-  const decrement = React.useCallback(
-    (counter: ICounter) => dispatch(decrementCounter()),
-    [dispatch]
-  )
+  const count = useAppSelector(selectCount);
+  const dispatch = useAppDispatch();
 
   return (
     <div>
-      <p>{counter.count}</p>
-      <button onClick={() => increment(counter)}>+</button>
-      <button onClick={() => decrement(counter)}>-</button>
+      <p>{count}</p>
+      <button onClick={() => dispatch(increment())}>+</button>
+      <button onClick={() => dispatch(decrement())}>-</button>
     </div>
   );
 }
