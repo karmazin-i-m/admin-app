@@ -1,0 +1,10 @@
+.LogEntryComponent{
+    display: grid;
+    grid-template-columns: 11% 19% auto;
+}
+
+.divGridColumn
+{
+    margin: 0;
+    margin-left: 5px;
+}
