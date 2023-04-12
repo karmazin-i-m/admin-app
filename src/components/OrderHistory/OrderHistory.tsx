@@ -1,6 +1,7 @@
 import { Basket } from "../../reducers/logsReducer/Types/BasketTypes";
 import { OrderHistory } from "../../reducers/logsReducer/Types/HistoryTypes";
 import { Order } from "../../reducers/logsReducer/Types/OrderTypes";
+import LogEntryComponent from "./LogEntry/LogEntryComponent";
 import style from "./OrderHistory.module.css"
 
 const OrderHistoryComponent = (props: { history: OrderHistory }) => {
@@ -9,8 +10,8 @@ const OrderHistoryComponent = (props: { history: OrderHistory }) => {
     const basketLastState: Basket | undefined = props.history.basketHistory?.basketStates.at(-1);
 
     const logsArray = props.history.orderLogEntry
-                                   .concat(...props.history.basketHistory?.basketLogEntry ?? [])
-                                   .sort((a,b) => a.creationTime.getTime() - b.creationTime.getTime());
+        .concat(...props.history.basketHistory?.basketLogEntry ?? [])
+        .sort((a, b) => a.creationTime.getTime() - b.creationTime.getTime());
 
     return (
         <div>
@@ -23,7 +24,7 @@ const OrderHistoryComponent = (props: { history: OrderHistory }) => {
             <div className={style.divLogs}>
                 LOGS:
                 <div>
-                    {logsArray.map(log => <div>{log.creationTime.toLocaleTimeString()} {log.text}</div>)}
+                    {logsArray.map(log => <LogEntryComponent log={log} />)}
                 </div>
             </div>
 
