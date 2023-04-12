@@ -1,0 +1,23 @@
+.OrderStatusPatagraph{
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.divStatus{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divLogs {
+    display: inline-block;
+    background-color: aqua;
+    width: 70%;
+}
+
+.divBasket {
+    display: inline-block;
+    background-color: yellow;
+    width: 30%;
+}

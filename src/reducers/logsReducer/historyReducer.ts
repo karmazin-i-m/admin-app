@@ -11,8 +11,9 @@ const fetchOrderHistoriesAsync = <T>(url: string): Promise<T> =>
             if (!response.ok) {
                 throw new Error(response.statusText)
             }
-            return response.json()
-        })
+
+            return response.json();
+        });
 }
     
 
@@ -20,7 +21,6 @@ export const fetchHistoryAsync = createAsyncThunk(
     'history/fetchHistory',
     async () => 
     {
-        debugger;
         return await fetchOrderHistoriesAsync<Array<OrderHistory>>("https://localhost:18101/api/OrderHistory/GetOrderHistories")
     } 
 );

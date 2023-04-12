@@ -21,7 +21,7 @@ export const logs : Array<OrderHistory> = [
       orderLogEntry: [
         {
           id: "c10832bb-2b46-4fa9-8c84-7c889be9a4aa",
-          creationTime: "2023-02-02T12:35:47.085279Z",
+          creationTime: new Date(Date.parse("2023-02-02T12:35:47.085279Z")),
           source: "OrderHistoryService",
           text: "Created historyEntity for Order with Id = b7fd9bf2-b205-474e-a993-aa82277f0da9"
         }
@@ -42,19 +42,19 @@ export const logs : Array<OrderHistory> = [
         basketLogEntry: [
           {
             id: "145920f0-b25c-40a3-a21d-8ad0d5c95567",
-            creationTime: "2023-02-02T12:35:48.103296Z",
+            creationTime: new Date(Date.parse("2023-02-02T12:35:48.103296Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "84c00244-a17b-4a04-965a-b1c10704e561",
-            creationTime: "2023-02-02T12:35:45.97586Z",
+            creationTime: new Date(Date.parse("2023-02-02T12:35:45.97586Z")),
             source: "BasketHistoryService",
             text: "Created historyEntity for Basket with Id = 349cde6c-fef4-43b1-96c7-d53c30d75d97"
           },
           {
             id: "92fda87b-c319-4aa5-b90f-722c446015af",
-            creationTime: "2023-02-02T12:35:47.611554Z",
+            creationTime: new Date(Date.parse("2023-02-02T12:35:47.611554Z")),
             source: "BaseBasketService",
             text: "Add item to basket wit id = 349cde6c-fef4-43b1-96c7-d53c30d75d97"
           }
@@ -79,7 +79,7 @@ export const logs : Array<OrderHistory> = [
       orderLogEntry: [
         {
           id: "e1ca83f6-72ed-4643-9b93-73b7ac669f06",
-          creationTime: "2023-02-20T14:59:39.342036Z",
+          creationTime: new Date(Date.parse("2023-02-20T14:59:39.342036Z")),
           source: "OrderHistoryService",
           text: "Created historyEntity for Order with Id = e6ad811b-27e0-4588-8b07-3d1ae221d6c0"
         }
@@ -263,97 +263,97 @@ export const logs : Array<OrderHistory> = [
         basketLogEntry: [
           {
             id: "03328428-913c-449e-93d7-9a85bd9e90fc",
-            creationTime: "2023-02-20T15:06:08.036794Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:08.036794Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "037eb7ff-3da0-4122-91e6-56fd4d1bcd9f",
-            creationTime: "2023-02-20T15:00:08.880879Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:00:08.880879Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "2e2fe17f-1226-4297-8646-b8122a6a84b1",
-            creationTime: "2023-02-20T15:06:20.524848Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:20.524848Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "4370eb47-d460-4052-9ef2-20c9529e1ecd",
-            creationTime: "2023-02-20T15:06:22.690647Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:22.690647Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "49fc3cba-21bc-4e98-a0e3-9c98075926e4",
-            creationTime: "2023-02-20T15:07:04.833642Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:07:04.833642Z")),
             source: "BaseBasketService",
             text: "Add item to basket wit id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "69361a3d-9283-4c68-9143-0559206fd749",
-            creationTime: "2023-02-20T15:06:07.557434Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:07.557434Z")),
             source: "BaseBasketService",
             text: "Remove item with index = 0 from basket. Basket.Id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "8782af37-c366-4bd4-8775-259ef1b6a029",
-            creationTime: "2023-02-20T15:06:20.289254Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:20.289254Z")),
             source: "BaseBasketService",
             text: "Remove item with index = 0 from basket. Basket.Id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "95efbf7c-d7b7-45b5-9351-ca8e8ddd2a17",
-            creationTime: "2023-02-20T15:06:18.154902Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:18.154902Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "b2b5d287-2a62-45e8-8a61-89c117d446fc",
-            creationTime: "2023-02-20T15:02:30.513241Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:02:30.513241Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "c3728a96-9f1f-4c48-af9d-b8aa90f3b52c",
-            creationTime: "2023-02-20T15:06:17.938822Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:17.938822Z")),
             source: "BaseBasketService",
             text: "Remove item with index = 0 from basket. Basket.Id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "c52a7640-57a9-4748-a6dd-7f4563f622f4",
-            creationTime: "2023-02-20T15:00:44.166173Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:00:44.166173Z")),
             source: "BasketHistoryService",
             text: "Add new basket state."
           },
           {
             id: "d3dc0f78-f88f-4dac-827d-da04fdfb8f20",
-            creationTime: "2023-02-20T15:06:22.445282Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:06:22.445282Z")),
             source: "BaseBasketService",
             text: "Remove item with index = 0 from basket. Basket.Id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "d96a026f-622b-42ed-ade1-245fdb0db36b",
-            creationTime: "2023-02-20T15:02:30.282968Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:02:30.282968Z")),
             source: "BaseBasketService",
             text: "Add item to basket wit id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "e0183505-5acd-4b8a-b0e7-785e0603abb5",
-            creationTime: "2023-02-20T15:00:08.383318Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:00:08.383318Z")),
             source: "BaseBasketService",
             text: "Add item to basket wit id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "e183483f-73ff-4335-9eec-8bc1a9cfdded",
-            creationTime: "2023-02-20T15:00:43.847274Z",
+            creationTime: new Date(Date.parse("2023-02-20T15:00:43.847274Z")),
             source: "BaseBasketService",
             text: "Add item to basket wit id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           },
           {
             id: "ed86189b-346c-4829-b72a-e68f58244f2b",
-            creationTime: "2023-02-20T14:59:38.139144Z",
+            creationTime: new Date(Date.parse("2023-02-20T14:59:38.139144Z")),
             source: "BasketHistoryService",
             text: "Created historyEntity for Basket with Id = 7aedb72a-aab2-428b-b392-68bed2a4c9af"
           }
