@@ -3,7 +3,7 @@ import { Basket } from "../../reducers/logsReducer/Types/BasketTypes";
 import { OrderHistory } from "../../reducers/logsReducer/Types/HistoryTypes";
 import { Order } from "../../reducers/logsReducer/Types/OrderTypes";
 import LogEntryComponent from "./LogEntry/LogEntryComponent";
-import style from "./OrderHistory.module.css"
+import style from "./OrderHistoryComponent.module.css"
 
 const OrderHistoryComponent = (props: { history: OrderHistory }) => {
 
