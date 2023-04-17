@@ -4,8 +4,8 @@ import style from "./LogEntryComponent.module.css";
 const LogEntryComponent = (props: { log: LogEntry }) => {
     return (
         <div className={style.LogEntryComponent}>
-            <p className={style.divGridColumn}>
-                {props.log.creationTime.getHours()}:{props.log.creationTime.getMinutes()}:{props.log.creationTime.getSeconds()} 
+            <p className={style.divGridColumn + ' ' + style.divGridColumnCenterText}>
+                {props.log.creationTime.getHours().toString().padStart(2,'0')}:{props.log.creationTime.getMinutes().toString().padStart(2,'0')}:{props.log.creationTime.getSeconds().toString().padStart(2,'0')} 
             </p>
             <p className={style.divGridColumn}>
                 {props.log.source}

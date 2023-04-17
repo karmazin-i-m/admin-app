@@ -14,8 +14,8 @@ export const logs : Array<OrderHistory> = [
           totalSum: 0,
           discaunt: 0,
           amount: 0,
-          createdAt: "2023-02-02T12:35:46.825929Z",
-          editedAt: "2023-02-02T12:35:46.825962Z"
+          createdAt: new Date(Date.parse("2023-02-02T12:35:46.825929Z")),
+          editedAt: new Date(Date.parse("2023-02-02T12:35:46.825962Z"))
         }
       ],
       orderLogEntry: [
@@ -28,7 +28,7 @@ export const logs : Array<OrderHistory> = [
       ],
       basketHistory: {
         basketId: "349cde6c-fef4-43b1-96c7-d53c30d75d97",
-        editedAt: "2023-02-02T12:35:48.103521Z",
+        editedAt: new Date(Date.parse("2023-02-02T12:35:48.103521Z")),
         basketStates: [
           {
             id: "349cde6c-fef4-43b1-96c7-d53c30d75d97",
@@ -72,8 +72,8 @@ export const logs : Array<OrderHistory> = [
           totalSum: 0,
           discaunt: 0,
           amount: 0,
-          createdAt: "2023-02-20T14:59:39.101174Z",
-          editedAt: "2023-02-20T14:59:39.10123Z"
+          createdAt: new Date(Date.parse("2023-02-20T14:59:39.101174Z")),
+          editedAt: new Date(Date.parse("2023-02-20T14:59:39.10123Z"))
         }
       ],
       orderLogEntry: [
@@ -86,7 +86,7 @@ export const logs : Array<OrderHistory> = [
       ],
       basketHistory: {
         basketId: "7aedb72a-aab2-428b-b392-68bed2a4c9af",
-        editedAt: "2023-02-20T15:07:05.015162Z",
+        editedAt: new Date(Date.parse("2023-02-20T15:07:05.015162Z")),
         basketStates: [
           {
             id: "7aedb72a-aab2-428b-b392-68bed2a4c9af",

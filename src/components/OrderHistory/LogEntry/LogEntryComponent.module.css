@@ -1,10 +1,16 @@
 .LogEntryComponent{
     display: grid;
-    grid-template-columns: 11% 19% auto;
+    margin: 5px;
+    grid-template-columns: 10% 23% auto;
 }
 
 .divGridColumn
 {
     margin: 0;
-    margin-left: 5px;
+    margin-left: 0px;
+    overflow-wrap: break-word;
+}
+
+.divGridColumnCenterText{
+    text-align: center;
 }

@@ -5,7 +5,7 @@ import { Order } from "./OrderTypes";
 export interface BasketHistory
 {
     basketId : string;
-    editedAt : string;
+    editedAt : Date;
     basketStates : Array<Basket>;
     basketLogEntry : Array<LogEntry>;
 }

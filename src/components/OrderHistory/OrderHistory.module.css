@@ -1,23 +1,37 @@
-.OrderStatusPatagraph{
-    background-color: red;
+.OrderStatusPatagraph {
     display: inline-block;
     text-align: center;
     margin: 0;
 }
 
-.divStatus{
+.divOrderHistoryComponent {
+    margin: 5px;
+    border-radius: 15px;
+    background-color: lightgrey;
+}
+
+.divStatus {
     display: grid;
+    min-height: 50px;
+    align-content: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: gray;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divStatusIsVisible{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .divLogs {
     display: inline-block;
-    background-color: aqua;
-    width: 70%;
+    width: 80%;
 }
 
 .divBasket {
     display: inline-block;
-    background-color: yellow;
-    width: 30%;
+    width: 20%;
+    vertical-align: top;
 }

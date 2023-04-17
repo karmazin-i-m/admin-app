@@ -4,4 +4,3 @@ export interface LogEntry {
     source: string;
     text: string;
 };
-

@@ -14,6 +14,6 @@ export interface Order {
     totalSum: number;
     discaunt: number;
     amount: number;
-    createdAt: string;
-    editedAt: string;
+    createdAt: Date;
+    editedAt: Date;
 };
