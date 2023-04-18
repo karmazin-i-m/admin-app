@@ -13,12 +13,36 @@
 .divStatus {
     display: grid;
     min-height: 50px;
-    align-content: center;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     background-color: gray;
+    color: white;
+    grid-template-rows: 1fr 1fr;
+}
+
+.divStatusDevice {
+    display: grid;
+    min-height: 25px;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.divDevice{
+    background-color: rgb(38, 114, 38);
+    margin: 10px;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.divStatusOrder {
+    display: grid;
+    min-height: 25px;
+    align-content: center;
+    font-size: x-large;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 .divStatusIsVisible{
     border-bottom-right-radius: 15px;

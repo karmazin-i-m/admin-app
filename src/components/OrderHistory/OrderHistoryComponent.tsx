@@ -18,10 +18,17 @@ const OrderHistoryComponent = (props: { history: OrderHistory }) => {
 
     return (
         <div className={style.divOrderHistoryComponent}>
-            <div className={ isVisible ? style.divStatus : style.divStatus + ' ' + style.divStatusIsVisible} onClick={() => isVisibleChanged(!isVisible)}>
-                <p className={style.OrderStatusPatagraph}>Status: {lastOrderState?.orderState}</p>
-                <p className={style.OrderStatusPatagraph}>Created at: {lastOrderState?.createdAt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second: '2-digit'})}</p>
-                <p className={style.OrderStatusPatagraph}>Edited at: {lastOrderState?.editedAt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second: '2-digit'})}</p>
+            <div className={isVisible ? style.divStatus : style.divStatus + ' ' + style.divStatusIsVisible} onClick={() => isVisibleChanged(!isVisible)}>
+                <div className={style.divStatusOrder}>
+                    <p className={style.OrderStatusPatagraph}>Status: {lastOrderState?.orderState}</p>
+                    <p className={style.OrderStatusPatagraph}>Created at: {lastOrderState?.createdAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</p>
+                    <p className={style.OrderStatusPatagraph}>Edited at: {lastOrderState?.editedAt.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</p>
+                </div>
+                <div className={style.divStatusDevice}>
+                    <div className={style.divDevice}>Terminal</div>
+                    <div className={style.divDevice}>Syrve</div>
+                    <div className={style.divDevice}>Printer</div>
+                </div>
             </div>
             {
                 isVisible &&
