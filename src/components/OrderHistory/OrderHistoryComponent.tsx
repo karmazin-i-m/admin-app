@@ -20,8 +20,8 @@ const OrderHistoryComponent = (props: { history: OrderHistory }) => {
         <div className={style.divOrderHistoryComponent}>
             <div className={ isVisible ? style.divStatus : style.divStatus + ' ' + style.divStatusIsVisible} onClick={() => isVisibleChanged(!isVisible)}>
                 <p className={style.OrderStatusPatagraph}>Status: {lastOrderState?.orderState}</p>
-                <p className={style.OrderStatusPatagraph}>Created: {lastOrderState?.createdAt.toLocaleTimeString()}</p>
-                <p className={style.OrderStatusPatagraph}>Edited: {lastOrderState?.editedAt.toLocaleTimeString()}</p>
+                <p className={style.OrderStatusPatagraph}>Created at: {lastOrderState?.createdAt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second: '2-digit'})}</p>
+                <p className={style.OrderStatusPatagraph}>Edited at: {lastOrderState?.editedAt.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second: '2-digit'})}</p>
             </div>
             {
                 isVisible &&

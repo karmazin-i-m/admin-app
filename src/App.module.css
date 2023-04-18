@@ -1,9 +1,25 @@
-.divAppComoponent{
+.divAppComoponent {
     display: grid;
     grid-template-columns: 10% auto;
     grid-template-rows: 100px auto;
+    background-color: #e6e6e6;
+    width: 1080px;
+    height: 1920px;
 }
 
-.divHeaderComponent{
+.divHeaderComponent {
     grid-column: span 2;
+}
+
+.divContentComponent {
+    overflow-y: scroll;
+    margin: 15px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.divContentComponent::-webkit-scrollbar {
+    display: none;
 }

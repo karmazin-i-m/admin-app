@@ -6,23 +6,26 @@ import OrderHistoryComponent from './components/OrderHistory/OrderHistoryCompone
 import style from './App.module.css';
 import HeaderComponent from './components/Header/HeaderComponent';
 import NavBarComponent from './components/NavBar/NavBarComponent';
+import { Route, Router, RouterProvider, Routes } from 'react-router';
+import ContentLogsComponent from './components/ContentLogs/ContentLogsComponent';
 
 const App = () => {
-
-  const histories: Array<OrderHistory> = useAppSelector(selectCount);
-  const dispath = useAppDispatch();
-  
   return (
     <div className={style.divAppComoponent}>
+
       <div className={style.divHeaderComponent}>
-        <HeaderComponent/>
+        <HeaderComponent />
       </div>
       <div className={style.divNavBarComponent}>
-        <NavBarComponent/>
+        <NavBarComponent />
       </div>
       <div className={style.divContentComponent}>
-        {histories.map(h => <OrderHistoryComponent history={h} />)}
-        <button children="Fetch" onClick={() => dispath(fetchHistoryAsync())}/>
+        <Routes>
+          <Route path="/" element={(<div>Home</div>)} />
+          <Route path="/devices" element={(<div>Devices</div>)} />
+          <Route path="/logs" element={(<ContentLogsComponent />)} />
+        </Routes>
+
       </div>
     </div>
   );
