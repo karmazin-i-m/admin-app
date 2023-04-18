@@ -1,0 +1,9 @@
+.divDeviceActionComponent{
+    height: 50px;
+    background-color: lightgray;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+}

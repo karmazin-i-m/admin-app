@@ -61,5 +61,5 @@ export const historySlice = createSlice(
 );
 
 //export const { fetchFromApi } = historySlice.actions;
-export const selectCount = (state: RootState) => state.Histories;
+export const selectHistories = (state: RootState) => state.hostoryReducer.Histories;
 export default historySlice.reducer;

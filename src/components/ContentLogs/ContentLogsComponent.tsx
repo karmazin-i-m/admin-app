@@ -1,12 +1,12 @@
 import { useAppDispatch } from '../../hooks/dispatchHook';
 import { useAppSelector } from '../../hooks/selectorHook';
 import { OrderHistory } from '../../reducers/logsReducer/Types/HistoryTypes';
-import { fetchHistoryAsync, selectCount } from '../../reducers/logsReducer/historyReducer';
+import { fetchHistoryAsync, selectHistories } from '../../reducers/logsReducer/historyReducer';
 import OrderHistoryComponent from '../OrderHistory/OrderHistoryComponent';
 import style from './ContentLogsComponent.module.css'
 
 const ContentLogsComponent = () => {
-    const histories: Array<OrderHistory> = useAppSelector(selectCount);
+    const histories: Array<OrderHistory> = useAppSelector(selectHistories);
     const dispath = useAppDispatch();
 
     return (
